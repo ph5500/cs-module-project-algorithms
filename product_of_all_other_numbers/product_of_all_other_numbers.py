@@ -3,9 +3,31 @@ Input: a List of integers
 Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
-    # Your code here
-
-    pass
+    # first pass
+    product = 1
+    zeroProduct = 1
+    # calculates the product of every element in the array
+    for i in arr:
+        # i an element is not equal to zero, multiply it
+        if i != 0:
+            product *= i
+            zeroProduct *= 1
+        else:
+            product *= i
+            zeroProduct *= 1
+        
+    newArr = []
+    # divides the product by each element in the array to find the product
+    # of every other element
+    for i in arr:
+        if i != 0:
+            newArr.append(product//i)
+        else:
+            newArr.append(zeroProduct)
+        
+    print(newArr)
+    return newArr
+        
 
 
 if __name__ == '__main__':
