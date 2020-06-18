@@ -14,6 +14,29 @@ def single_number(arr):
         if counts[num] == 1:
             return num    
     
+# def single_number(arr):
+#     s = set()
+#     # use either a dictionary or a set 
+#     # sets: hlding onto unique elements
+#     # loop through our arr
+#     for x in arr:
+#         # for each element
+#         # check if it's already in our set
+#         # if it is, then that's not our out-elmenet-out
+#         if x in s:
+#         # remove the element from our set
+#             s.remove(x)
+#         else:
+#             s.add(x)
+#     # the odd-element-out will be the only element in the set
+#     return list s  
+    
+        
+    
+    
+    
+    
+    
     
    # first pass
    
